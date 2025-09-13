@@ -6,17 +6,17 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class PedidoRepository {
-    // Usamos AtomicInteger para garantir que o ID seja único e sequencial de forma segura
+
+    // Tipo para garantir que o ID seja único e sequencial de forma segura
     private static final AtomicInteger contadorId = new AtomicInteger(0);
     private final List<Pedido> pedidos = new ArrayList<>();
 
     public Pedido salvar(Pedido pedido) {
 
-        // Gera um novo ID sequencial antes de salvar
         int novoId = contadorId.incrementAndGet();
-        pedido.setNumero(novoId);
+        pedido.setIdPedido(novoId);
         pedidos.add(pedido);
-        System.out.println("Pedido " + novoId + " armazenado na estrutura de dados."); // Mensagem de log
+        System.out.println("Pedido " + novoId + " salvo com sucesso." + pedido);
         return pedido;
     }
 
@@ -24,8 +24,8 @@ public class PedidoRepository {
         return pedidos;
     }
 
-    public void remover(Pedido pedido) {
-        pedidos.remove(pedido);
+    public boolean remover(int id) {
+        return pedidos.removeIf(p -> p.getIdPedido().equals(id));
     }
 
     public Pedido buscarPorId(Pedido pedido, int id) {
