@@ -3,18 +3,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ServicoEntrega {
-    public List<Fretavel> itensDaEntrega = new ArrayList<>();
-    public Double distancia;
+    private List<Fretavel> itensFretados;
 
     public ServicoEntrega() {
-        itensDaEntrega = new ArrayList();
+        this.itensFretados = new ArrayList<>();
     }
-    // tratar todos de forma igual (POLIMORFISMO!)
-    public double calcularCustoTotal() {
-        double total = 0;
-        for (Fretavel item : itensDaEntrega) {
-            total += item.calcularCustoFrete(distancia);
+    public void adicionaItem(Fretavel item) {
+        this.itensFretados.add(item);
+    }
+
+    public void limparLista() {
+        this.itensFretados.clear();
+    }
+
+
+    public double calcularCustoTotal(double distancia) {
+        double custoTotal = 0.0;
+        for (Fretavel item : itensFretados) {
+            custoTotal += item.calcularCustoFrete(distancia);
         }
-        return total;
+        return custoTotal;
     }
 }
