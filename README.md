@@ -8,10 +8,10 @@ O foco principal é a aplicação de conceitos de Programação Orientada a Obje
 
 Índice das soluções implementadas.
 
-| Atividade | Descrição da Solução | Link para o Pacote |
-| :--- | :--- | :--- |
-| **Lab 01** | Sistema de Gerenciamento de Pedidos | [`./src/main/java/ufrn/imd/lp2/lab01/`](./src/main/java/ufrn/imd/lp2/lab01/) |
-| | Implementação de um sistema CRUD simples de pedidos utilizando uma arquitetura em camadas (Controller, Service, Repository e Domain). | |
-| |
-| **Lab 02** | Sistema de Frete | [`./src/main/java/ufrn/imd/lp2/lab02/`](./src/main/java/ufrn/imd/lp2/lab02/) |
-| | Demonstração de Polimorfismo através do uso de Interfaces e Herança para calcular o custo de frete de múltiplos veículos e entregadores com regras de negócio distintas. | |
+| Atividade     | Descrição da Solução | Link para o Pacote                                                                  |
+|:--------------| :--- |:------------------------------------------------------------------------------------|
+| **Lab 01**    | Sistema de Gerenciamento de Pedidos | [`./src/main/java/ufrn/imd/lp2/lab01/`](./src/main/java/ufrn/imd/lp2/lab01/)        |
+|               | Implementação de um sistema CRUD simples de pedidos utilizando uma arquitetura em camadas (Controller, Service, Repository e Domain). |                                                                                     |
+|               |
+| **Lab Extra** | Sistema de Frete | [`./src/main/java/ufrn/imd/lp2/lab_extra/`](./src/main/java/ufrn/imd/lp2/lab_extra/) |
+|               | Demonstração de Polimorfismo através do uso de Interfaces e Herança para calcular o custo de frete de múltiplos veículos e entregadores com regras de negócio distintas. |                                                                                     |

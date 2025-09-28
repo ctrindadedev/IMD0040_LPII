@@ -1,4 +1,4 @@
-package main.java.ufrn.imd.lp2.lab02.domain;
+package main.java.ufrn.imd.lp2.lab_extra.domain;
 
 public class Moto extends Veiculo {
 

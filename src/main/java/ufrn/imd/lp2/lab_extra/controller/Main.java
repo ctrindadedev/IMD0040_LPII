@@ -1,5 +1,5 @@
-package main.java.ufrn.imd.lp2.lab02.controller;
-import main.java.ufrn.imd.lp2.lab02.domain.*;
+package main.java.ufrn.imd.lp2.lab_extra.controller;
+import main.java.ufrn.imd.lp2.lab_extra.domain.*;
 
 public class Main {
     public static void main(String[] args) {
