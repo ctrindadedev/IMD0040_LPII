@@ -14,4 +14,7 @@ O foco principal é a aplicação de conceitos de Programação Orientada a Obje
 |               | Implementação de um sistema CRUD simples de pedidos utilizando uma arquitetura em camadas (Controller, Service, Repository e Domain). |                                                                                     |
 |               |
 | **Lab Extra** | Sistema de Frete | [`./src/main/java/ufrn/imd/lp2/lab_extra/`](./src/main/java/ufrn/imd/lp2/lab_extra/) |
-|               | Demonstração de Polimorfismo através do uso de Interfaces e Herança para calcular o custo de frete de múltiplos veículos e entregadores com regras de negócio distintas. |                                                                                     |
+|               | Demonstração de Polimorfismo através do uso de Interfaces e Herança para calcular o custo de frete de múltiplos veículos e entregadores com regras de negócio distintas. |    
+| **Lab 02** | Sistema de Gerenciamento Bancário | [`./src/main/java/ufrn/imd/lp2/lab02/`](./src/main/java/ufrn/imd/lp2/lab02/) |
+|               | Simulação de um sistema bancário, aplicando Herança (Conta, ContaCorrente, ContaPoupanca), Interfaces, e Polimorfismo para gerenciar diferentes tipos de contas e suas operações/metódos| 
+
