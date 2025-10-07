@@ -8,6 +8,10 @@ public class BancoService {
     public void criarConta(String nomeCliente, int tipoConta) {
         int numeroConta = repository.getProximoNumeroConta();
         Conta novaConta;
+    if (tipoConta != 1 && tipoConta != 2) {
+        System.out.println("Erro: Tipo de conta inválido. Por favor, escolha 1 para Corrente ou 2 para Poupança.");
+        return; 
+    }
         if (tipoConta == 1) {
             novaConta = new ContaCorrente(numeroConta, nomeCliente);
         } 
